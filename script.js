@@ -23,7 +23,7 @@ const play = (playerSel, computerSel) => {
             else if(playerSel === "Paper") result = "lose";
             else result = "equal";
             break;
-    }  
+    }
 
     switch (result) {
         case "win":
@@ -44,7 +44,7 @@ const game = () => {
         let choice = prompt("Type rock paper or scissors");
 
         if (choice === null) {
-            alert("aborted");
+            alert("Game aborted");
             return;
         }
 
@@ -60,7 +60,7 @@ const game = () => {
                 score --;
                 break;
             default:
-                alert(output);                
+                alert(output);          
         }
     }
     alert(`Score = ${score}`);
