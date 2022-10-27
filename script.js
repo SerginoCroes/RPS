@@ -53,7 +53,7 @@ const game = choice => {
         display.innerText = result;
         round ++
     } else {
-        display.innerText = `${result}. Rounds finished, your score = ${score}`;
+        display.innerHTML = `${result}</p><p> Rounds finished, your score = ${score}`;
         round = 1;
         score = 0;
     }
